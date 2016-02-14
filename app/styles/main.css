@@ -1,8 +1,9 @@
 body {
-    background-color: #758C75;
+    background-color: #2db069;
     background-image: url(../images/edited.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .navbar-default {
