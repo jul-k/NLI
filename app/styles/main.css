@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+@keyframes changeBgC {
+    from {background-color: rgba(0,0,0,.1);}
+    to {background-color: rgba(0,0,0,.7);}
+}
+
 body {
     background-color: #2db069;
     background-image: url(../images/edited.jpg);
@@ -8,6 +13,12 @@ body {
     background-attachment: fixed;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
+}
+
+.change .navbar-default{
+    background-color: rgba(0,0,0,.7);
+    animation-name: changeBgC;
+    animation-duration: 5s;
 }
 
 .navbar-default {

@@ -45,3 +45,16 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
         }
     ]
 }]);
+
+app.directive("scroll", function ($window) {
+    return function(scope, element, attrs) {
+        angular.element($window).bind("scroll", function() {
+             if (this.pageYOffset >= 200) {
+                 scope.changeClass = true;
+             } else {
+                 scope.changeClass = false;
+             }
+            scope.$apply();
+        });
+    };
+});
