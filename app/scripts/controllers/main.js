@@ -54,6 +54,9 @@ app.directive("scroll", function ($window) {
              } else {
                  scope.changeClass = false;
              }
+             if (this.pageYOffset >=700) {
+                 scope.imgOpacity = true;
+             }
             scope.$apply();
         });
     };
