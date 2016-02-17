@@ -57,6 +57,9 @@ app.directive("scroll", function ($window) {
              if (this.pageYOffset >=700) {
                  scope.imgOpacity = true;
              }
+             if (this.pageYOffset >=1300) {
+                 scope.imgOpacity2 = true;
+             }
             scope.$apply();
         });
     };
