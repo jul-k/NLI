@@ -60,7 +60,16 @@ app.directive("scroll", function ($window) {
              if (this.pageYOffset >=1300) {
                  scope.imgOpacity2 = true;
              }
-            scope.$apply();
+             if (this.pageYOffset >=1900) {
+                 scope.imgOpacity3 = true;
+             }
+             if (this.pageYOffset >=2500) {
+                 scope.imgOpacity4 = true;
+             }
+             if (this.pageYOffset >=3100) {
+                 scope.imgOpacity5 = true;
+             }
+             scope.$apply();
         });
     };
 });
