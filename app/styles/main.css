@@ -512,29 +512,58 @@ button:hover, button:focus {
 
 footer {
     background-color: #fff;
-}
-
-footer ul {
-    height: 80px;
-    width: auto;
+    width: 100%;
+    transform: translateZ(0);
+    float: left;
+    min-height: 80px;
     color: #919191;
+    box-sizing: border-box;
+    clear: both;
+    margin: 0;
+    left: 0;
     position: absolute;
     margin-top: 3700px;
+    display: inline-block;
+    vertical-align: middle !important;
 }
 
 footer ul, footer ul li {
     float: left;
     margin-left: 30px;
+    list-style-type: none;
+    font-size: 18px;
+    margin-top: 12px;
 }
 
-footer .container .newsletter {
+footer ul li.copy {
+    margin-top: 17px;
+}
+
+footer ul li a{
+    color: #3b4350;
+    transition: all .2s ease-out;
+    display: inline-block;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    line-height: 24px;
+    border-radius: 2px;
+    background-clip: padding-box;
+}
+
+footer ul li a:hover, footer ul li a:focus {
+    background: rgba(0,0,0,.05);
+    color: #527bbc;
+    text-decoration: none;
+}
+
+footer .newsLetter {
     float: right;
     height: 60px;
     width: 420px;
     margin-right: 65px;
 }
 
-footer .container .newsletter input {
+footer .newsLetter input {
     border: 2px solid #3b4350;
     font-weight: 400;
     float: left;
@@ -550,4 +579,27 @@ footer .container .newsletter input {
     display: block;
     line-height: 40px;
     height: 40px;
+}
+
+footer .newsLetter input:focus, footer .newsLetter input:active {
+    outline: 0 !important;
+}
+
+footer .newsLetter a {
+    border-top-right-radius: 2px;
+    float: left;
+    background: #3b4350;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    transition: all .2s ease-out;
+    width: 120px;
+    display: block;
+    line-height: 40px;
+    height: 40px;
+}
+
+footer .newsLetter a:hover, footer .newsLetter a:focus, footer .newsLetter a:visited {
+    color: #fff;
+    text-decoration: none;
 }
