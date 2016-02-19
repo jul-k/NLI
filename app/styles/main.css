@@ -35,6 +35,11 @@ body {
   padding-left: 30px;
 }
 
+.navbar-brand img {
+    height: 45px;
+    margin-top: -12px;
+}
+
 .navbar-default .navbar-toggle {
   border-color: #fff;
 }
